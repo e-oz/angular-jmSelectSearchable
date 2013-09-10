@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="exampleApp" ng-controller="exampleCtrl">
+    <div jm-select-searchable 
+                        objects="employees" 
+                        ng-model="employee"
+                        print-attrs="{{ first_name }} {{ last_name }}"
+                        ></div>
+  </body>
+
+</html>
