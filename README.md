@@ -13,3 +13,5 @@ It's not "typeahead", because in typeahead you can input any text in inputbox, a
 Included HTML template is an example, currently designed for Twitter Bootstrap 3.0.0    
 Usage [example in Plunker](http://plnkr.co/edit/UVzDiNZKbjDE1ZxY9hJD)  
 
+###Improvements
+Any pull-requests for improvements and optimizations are very welcomed!   
