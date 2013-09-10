@@ -1,5 +1,5 @@
 <div>    
-    <div class="form-control div-select" ng-click="show_list=!show_list">
+    <div class="form-control clip-overflow" ng-click="show_list=!show_list">
         <button type="button" class="label pull-right text-center" ng-hide="show_list" tabindex="-1">
             <span class="glyphicon glyphicon-chevron-down" style="color: #555;"></span>
         </button>
@@ -15,7 +15,7 @@
         </div>
         <ul class="dropdown-menu col-sm-12 shifted-dropdown" style="display: block !important;">
             <li ng-repeat="object in objects | filter:search | limitTo:10">
-                <a tabindex="-1" href="" ng-click="setObject(object)">{{ getItemString(object) }}</a>
+                <a class="clip-overflow" tabindex="-1" href="" ng-click="setObject(object)">{{ getItemString(object) }}</a>
             </li>
         </ul>
     </div>
