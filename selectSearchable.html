@@ -1,15 +1,12 @@
-<div>
-    <div>
-        <div>
-            <div class="form-control" ng-click="show_list=!show_list">{{ getItemString(ngModel) }}
-                <button type="button" class="label pull-right text-center" ng-hide="show_list" tabindex="-1">
-                    <span class="glyphicon glyphicon-chevron-down" style="color: #555;"></span>
-                </button>
-                <button type="button" class="label pull-right text-center" ng-show="show_list" tabindex="-1">
-                    <span class="glyphicon glyphicon-chevron-up" style="color: #555;"></span>
-                </button>
-            </div>
-        </div>
+<div>    
+    <div class="form-control div-select" ng-click="show_list=!show_list">
+        <button type="button" class="label pull-right text-center" ng-hide="show_list" tabindex="-1">
+            <span class="glyphicon glyphicon-chevron-down" style="color: #555;"></span>
+        </button>
+        <button type="button" class="label pull-right text-center" ng-show="show_list" tabindex="-1">
+            <span class="glyphicon glyphicon-chevron-up" style="color: #555;"></span>
+        </button>
+        {{ getItemString(ngModel) }}
     </div>
     <div ng-show="show_list" class="dropdown">
         <div class="input-group dropdown-input">
