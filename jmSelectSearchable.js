@@ -24,7 +24,7 @@ angular.module('exampleApp')
                        return '';
                      }
                      if (!$scope.printAttrs || !angular.isString($scope.printAttrs)) {
-                       $scope.printAttrs = '{{ first_name }} {{ last_name }}';
+                       return '';
                      }
                      else {
                        $scope.printAttrs = $scope.printAttrs.replace(/\[\[/g, '{{');
